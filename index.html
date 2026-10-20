@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <h1>Image Gallery</h1>
+
+    <div class="filter-buttons">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('city')">City</button>
+        <button onclick="filterImages('animals')">Animals</button>
+    </div>
+
+    <div class="gallery">
+
+        <div class="image nature">
+            <img src="https://picsum.photos/id/10/600/400" alt="">
+        </div>
+
+        <div class="image city">
+            <img src="https://picsum.photos/id/1011/600/400" alt="">
+        </div>
+
+        <div class="image animals">
+            <img src="https://picsum.photos/id/1025/600/400" alt="">
+        </div>
+
+        <div class="image nature">
+            <img src="https://picsum.photos/id/1040/600/400" alt="">
+        </div>
+
+        <div class="image city">
+            <img src="https://picsum.photos/id/1060/600/400" alt="">
+        </div>
+
+        <div class="image animals">
+            <img src="https://picsum.photos/id/237/600/400" alt="">
+        </div>
+
+    </div>
+
+    <!-- Lightbox -->
+
+    <div class="lightbox" id="lightbox">
+
+        <span class="close">&times;</span>
+
+        <span class="prev">&#10094;</span>
+
+        <img id="lightbox-img">
+
+        <span class="next">&#10095;</span>
+
+    </div>
+
+    
+
+</body>
+<script src="index.js"></script>
+</html>
